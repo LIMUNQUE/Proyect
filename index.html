@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Document</title>
+		<style>
+			label{
+				width: 150px;
+				display: inline-block;
+			}
+		</style>
 	</head>
 
 	<body>
-		<form action="pagina2.php">
+		<form method="post" action="paginas/pagina2.php">
 			<label for="nombre">Nombre:</label>
 			<input type="text" name="nombre" id="nombre"><br>
 
@@ -14,7 +20,8 @@
 			<input type="text" name="asunto" id="asunto"><br>
 
 			<label for="mensaje">Mensaje</label>
-			<input type="text" name="mensaje" id="mensaje"><br>
+			<textarea name="mensaje" id="mensaje" rows="10" cols="30"></textarea><br>
+
 
 			<input type="submit">
 		</form>
